@@ -147,4 +147,113 @@ NoConn ~ 4450 5550
 NoConn ~ 4450 5650
 NoConn ~ 4450 5750
 NoConn ~ 4450 5850
+Text Label 2450 2300 0    50   ~ 0
+3.3V
+Text Label 2450 2450 0    50   ~ 0
+5V
+Text Label 2450 2600 0    50   ~ 0
+12V
+Wire Wire Line
+	2450 2300 2850 2300
+Wire Wire Line
+	2850 2450 2450 2450
+Wire Wire Line
+	2450 2600 2850 2600
+$Comp
+L Motor:Motor_DC M?
+U 1 1 5EA15B37
+P 4800 2650
+F 0 "M?" H 4958 2646 50  0000 L CNN
+F 1 "Motor_DC" H 4958 2555 50  0000 L CNN
+F 2 "" H 4800 2560 50  0001 C CNN
+F 3 "~" H 4800 2560 50  0001 C CNN
+	1    4800 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L led_panel_driver-rescue:switch3-New_Library U?
+U 1 1 5EA227D6
+P 3050 2450
+F 0 "U?" H 3050 2825 50  0000 C CNN
+F 1 "Velocidade" H 3050 2734 50  0000 C CNN
+F 2 "" H 2850 2600 50  0001 C CNN
+F 3 "" H 2850 2600 50  0001 C CNN
+	1    3050 2450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2950 3400 2950
+Wire Wire Line
+	3400 2950 3400 3100
+$Comp
+L power:GND #PWR?
+U 1 1 5EA264B7
+P 3400 3100
+F 0 "#PWR?" H 3400 2850 50  0001 C CNN
+F 1 "GND" H 3405 2927 50  0000 C CNN
+F 2 "" H 3400 3100 50  0001 C CNN
+F 3 "" H 3400 3100 50  0001 C CNN
+	1    3400 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2300 4800 2450
+Wire Wire Line
+	4800 3100 4800 2950
+Wire Wire Line
+	3950 2800 4200 2800
+Wire Wire Line
+	3950 2600 4200 2600
+NoConn ~ 3950 2450
+NoConn ~ 3950 2950
+Wire Wire Line
+	3400 2950 3400 2850
+Connection ~ 3400 2950
+$Comp
+L led_panel_driver-rescue:switch2-New_Library U?
+U 1 1 5EA219AD
+P 3750 2700
+F 0 "U?" H 3750 3325 50  0000 C CNN
+F 1 "Direção" H 3750 3234 50  0000 C CNN
+F 2 "" H 3500 3150 50  0001 C CNN
+F 3 "" H 3500 3150 50  0001 C CNN
+	1    3750 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5EA31F4E
+P 3400 2700
+F 0 "D?" V 3354 2779 50  0000 L CNN
+F 1 "D" V 3445 2779 50  0000 L CNN
+F 2 "" H 3400 2700 50  0001 C CNN
+F 3 "~" H 3400 2700 50  0001 C CNN
+	1    3400 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3400 2550 3400 2450
+Wire Wire Line
+	3250 2450 3400 2450
+Wire Wire Line
+	3400 2450 3550 2450
+Connection ~ 3400 2450
+Wire Wire Line
+	3950 2300 4500 2300
+Wire Wire Line
+	4200 2800 4500 3100
+Wire Wire Line
+	4500 3100 4800 3100
+Wire Wire Line
+	3950 3100 4200 3100
+Wire Wire Line
+	4200 3100 4500 2800
+Wire Wire Line
+	4500 2800 4500 2300
+Connection ~ 4500 2300
+Wire Wire Line
+	4500 2300 4800 2300
+Wire Wire Line
+	4200 2600 4200 2800
+Connection ~ 4200 2800
 $EndSCHEMATC

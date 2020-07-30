@@ -1622,7 +1622,6 @@ Text Notes 4850 2450 0    50   ~ 0
 QSPI - DQ3 - Loc1
 NoConn ~ 14350 1850
 NoConn ~ 14350 1950
-NoConn ~ 8850 5050
 Wire Wire Line
 	2500 6900 2800 6900
 Text Label 2800 6900 2    50   ~ 0
